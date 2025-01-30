@@ -3,36 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Slack Profile Card</title>
+    <title>Sid"s Profile Card</title>
 </head>
 <body>
     <h1>Hello there!, welcome to my page</h1>
     <div id="wrapper">
-        <div class="info1">
-            <!--Slack Display Picture-->
-            <img src="./img/profile.jpeg" alt="Yetunde" data-testid="slackDisplayImage"/>
+        <div class="info">
+            <!--Profile Picture-->
+            <img src="./img/profile1.jpeg" alt="Yetunde" data-testid="profilePicture" width="100%"/>
 
-            <!--Slack User Name-->
-            <h2 data-testid="slackUserName">SidYetty</h2>
+            <!--full Name-->
+            <h2 data-testid="fullName">Abdulkareem Yetunde Siddiqat</h2>
+
+            <h3 data-testid="jobTitle">FrontEnd Developer</h3>
         </div>
-        <div class="info2">
-            <!--Current Day of the Week-->
-            <span data-testid="currentDayOfTheWeek">Monday</span>
+        <div class="info">
+            <!-- bio -->
+            <p data-testid="shortBio"><b>A little about me: </b>I’m a software developer passionate about learning and growing. I’m always working on frontend projects and exploring AI technologies. I taking on projects and programs to expand my skills, with CS50 being one of my recent achievements. In my free time, I enjoy
+            reading, listening to podcasts (creating a podcast myself soon), and practicing daily routines like working out. I strive to improve continuously while
+            maintaining a balanced lifestyle and enjoying the journey of learning and creating.</p>
 
-            <!--Current UTC Time-->
-            <span data-testid="currentUTCTime">1111</span>
+            <!-- current location -->
+            <p data-testid="currentLocation"><b>Location:</b> Ilorin, Kwara State, Nigeria.</p>
 
-            <!--Track-->
-            <p data-testid="myTrack">FrontEnd</p>
+            <!-- email -->
+            <p data-testid="emailAddress"><b>Mail:</b> abdulkareemsiddiqat@outlook.com</p>
 
-            <!--GitHub Url-->
-            <p><a href="https://github.com/Siddami" target="_blank"  data-testid="myTrack"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github"/></a></p>
+            <!-- UTC time -->
+            <span data-testid="currentTimeUTC">1111</span>
         </div>
-
+        <div data-testid="socialLinks" class="info">
+                <a href="https://github.com/Siddami" target="_blank">
+                    <img src="./img/github.png" alt="github icon" class="icons">
+                </a>
+                <a href="https://www.linkedin.com/in/siddiqat" target="_blank" class="icons">
+                    <img src="./img/linkedin.png" alt="linkedin icon" class="icons">
+                </a>
+                <a href="https://x.com/sid_the_dev" target="_blank">
+                    <img src="./img/twitter.png" alt="twitter icon" class="icons">
+                </a>
+        </div>
     </div>
 
     <script src="index.js"></script>
