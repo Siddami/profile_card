@@ -1,53 +1,72 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#wrapper{
-    margin: 5px auto;
-    padding: 5px;
-    width: 320px;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+#wrapper {
+  margin: 10px auto;
+  padding: 10px;
+  width: 60%;
+  max-width: 1000px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
-.info1, .info2{
-    padding: 8px;
-    justify-self: center;
-    align-self: center;
-}
-
-[data-testid="slackDisplayImage"]{
-    max-width: 50%;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 3px 7px rgba(3, 1, 0, 0.1);
+.info {
+  padding: 8px;
+  justify-self: center;
+  align-self: center;
 }
 
-[data-testid="slackUserName"]{
-    padding: 8px;
-    color: rgb(22, 21, 21);
+[data-testid="profilePicture"] {
+  max-width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 7px rgba(3, 1, 0, 0.1);
 }
 
-span{
-    display: block;
-    padding: 8px;
+[data-testid="fullName"],
+[data-testid="jobTitle"] {
+  padding: 8px;
+  color: rgb(22, 21, 21);
+  font-weight: bolder;
 }
-p{
-    padding: 8px;
+
+span {
+  display: block;
+  padding: 8px;
+}
+p {
+  padding: 8px;
+  line-height: 1.5;
+}
+
+.icons {
+  width: 20px;
+}
+
+[data-testid="socialLinks"] {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  #wrapper {
+    width: 95%;
+  }
 }
