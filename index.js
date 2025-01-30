@@ -1,7 +1,5 @@
 function dateAndTime() {
     const now = new Date()
-    const dayOfTheWeek= now.toLocaleDateString('en-US', { weekday: 'long' });
-    const dayString = `Today is ${dayOfTheWeek}`
 
     //Time condition
     let hours = now.getUTCHours()
@@ -15,8 +13,7 @@ function dateAndTime() {
 
     const utcTime = `${hours}:${minutes}:${seconds}:${milliseconds} UTC`;
 
-    document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = dayString;
-    document.querySelector('[data-testid="currentUTCTime"]').textContent = utcTime;
+    document.querySelector('[data-testid="currentTimeUTC"]').textContent = utcTime;
 }
 
 setInterval(dateAndTime, 1);
